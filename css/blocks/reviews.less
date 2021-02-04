@@ -1,0 +1,170 @@
+// main: ../style.less
+
+.reviews {
+    margin: 110px auto;
+
+    @media @mobile {
+        margin: 80px auto;
+    }
+
+    @media @mobile-sm {
+        margin: 20px auto;
+    }
+}
+
+.reviews__inner {
+    margin-top: 30px;
+
+    display: flex;
+}
+
+.reviews__col {
+    min-height: 450px;
+    display: flex;
+    width: 18.5%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &--left {
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+    &--right {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        @media @mobile {
+            display: none;
+        }
+    }
+}
+
+.reviews__center {
+    width: 63%;
+
+    @media @mobile {
+        width: 100% ;
+    }
+}
+
+.reviews__item {
+
+    &--left {
+        align-self: flex-start;
+    }
+
+    &--right {
+        align-self: flex-end;
+    }
+}
+
+.reviews__photo-image {
+    display: block;
+    margin: 0 auto;
+
+    @media @mobile {
+        width: 150px;
+    }
+}
+
+.reviews__content {
+    margin: 0 auto 15px auto;
+    max-width: 550px;
+    text-align: center;
+}
+
+.reviews__text {
+    margin: 0 auto 35px;
+
+    color: #333;
+    font-size: 24px;
+
+    position: relative;
+
+    @media @tablet {
+        font-size: 20px;
+    }
+
+    @media @mobile {
+        font-size: 17px;
+        max-width: 450px;
+        text-align: center;
+    }
+
+    @media @mobile-sm {
+        font-size: 14px;
+    }
+}
+
+.reviews__quote-left {
+    position: absolute;
+    left: -40px;
+    top: -15px;
+    z-index: 1;
+
+    @media @tablet {
+        width: 30px;
+        left: -30px;
+    }
+
+    @media @mobile {
+        width: 20px;
+        left: -25px;
+    }
+
+    @media @mobile-sm {
+        width: 10px;
+        left: 0px;
+    }
+}
+
+.reviews__quote-right {
+    position: absolute;
+    right: -40px;
+    top: -15px;
+    z-index: 1;
+
+    @media @tablet {
+        width: 30px;
+        right: -30px;
+    }
+
+    @media @mobile {
+        width: 20px;
+        right: -25px;
+    }
+
+    @media @mobile-sm {
+        width: 10px;
+        right: 0px;
+    }
+}
+
+.reviews__author {
+    margin-bottom: 20px;
+
+    font-size: 16px;  
+    font-weight: 700;
+    color: @black-str; 
+
+    @media @tablet {
+        font-size: 15px;
+    }
+
+    @media @mobile-sm {
+        font-size: 13px;
+    }
+}
+
+.reviews__post {
+    font-size: 14px;
+    color: @black-str;
+
+    @media @mobile-sm {
+        font-size: 12px;
+    }
+}

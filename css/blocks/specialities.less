@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.specialities {
+    margin-top: 110px;
+
+    @media @tablet {
+        margin-top: 80px;
+    }
+}
+
+.specialities__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 40px auto 30px auto;
+}
+
+.specialities__item {
+    width: 31%;
+    padding: 37px 40px 30px 40px;
+
+    box-shadow: 0 10px 30px rgba(153, 153, 153, 20%);
+
+    @media @tablet {
+        padding: 20px;
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin: 0px 20px 20px;
+        padding: 10px 20px;
+    }
+}
+
+.specialities__item-photo {
+    display: block;
+    margin: 0 auto;
+
+    @media @tablet {
+        width: 150px;
+    }
+}
+
+.specialities__item-title {
+    margin: 15px 0;
+
+    color: @black-str;
+    font-size: 24px;
+    text-align: center;
+
+    @media @tablet {
+        font-size: 20px;
+    }
+}
+
+.specialities__item-text {
+    font-size: 15px;
+    color: @black;
+    text-align: center;
+
+    @media @tablet {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,87 @@
+// main: ../style.less
+
+.intro {
+    background-image: url(../images/intro-background.svg);
+
+    overflow: hidden;
+    position: relative;
+
+    @media @mobile {
+        margin-top: 165px;
+    }
+
+    @media @mobile-sm {
+        margin-top: 110px;
+    }
+}
+
+.intro__content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    margin-bottom: 20px;
+
+    font-size: 46px;
+    font-weight: 400;
+    color: @black-str;
+
+    @media @notebook {
+        font-size: 42px;
+    }
+
+    @media @tablet {
+        font-size: 36px;
+    }
+
+    @media @mobile-sm {
+        font-size: 25px;
+    }
+}
+
+.intro__text {
+    margin-bottom: 35px;
+
+    @media @tablet {
+        font-size: 14px;
+    }
+
+    @media @mobile-sm {
+        font-size: 12px;
+    }
+}
+
+.intro__photo {
+    display: block;
+    margin: 20px auto;
+
+    @media @tablet {
+        width: 700px;
+    }
+
+
+    @media @mobile-sm {
+        width: 400px;
+        margin: 40px auto;
+    }
+}
+
+.intro__photo-footer {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: -20px;
+
+    @media @notebook {
+        bottom: 20px;           
+    }
+
+    @media @tablet {
+        bottom: 15px;
+    }
+
+    @media @mobile {
+        display: none;
+    }
+}

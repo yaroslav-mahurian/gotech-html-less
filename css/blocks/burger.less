@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.burger {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+    display: none;
+    
+    &--active{
+        display: block;
+    }
+
+    @media @mobile {
+        display: block;
+    }
+
+    @media @mobile-sm {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.burger__icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

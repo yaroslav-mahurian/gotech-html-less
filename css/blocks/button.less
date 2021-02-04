@@ -1,0 +1,70 @@
+// main: ../style.less
+
+.primary {
+    display: inline-block;
+    padding: 14px 30px;
+    min-width: 150px;
+    vertical-align: top;
+
+    font-size: 15px;
+    color: @white;
+    font-family: inherit;
+    font-weight: 700;
+    text-decoration: none;
+
+    background: linear-gradient(to right, #6362D7, #C37DDD);
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    @media @tablet {
+        padding: 16px 30px;
+        min-width: 140px;
+        font-size: 17px;
+    }
+
+    @media @mobile-sm {
+        padding: 12px 30px;
+        min-width: 130px;
+        font-size: 13px;
+    }
+    
+    &:hover {
+        color: #9D60EB;
+        background: none;   
+        border: 1px solid #9D60EB;
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &+.primary {
+        margin-left: 35px;
+
+        @media @mobile-sm {
+            margin-left: 5px;
+        }
+    }
+
+    &--transparent {
+        color: #9D60EB;
+        background: none;
+        border: 1px solid #9D60EB;
+
+        &:hover {
+            color: @white;
+           background: linear-gradient(to right, #6362D7, #C37DDD);;
+           border: 1px solid transparent;
+        }
+    }
+
+    &--about {
+
+        @media @mobile {
+            margin: 20px;
+            display: block;
+            text-align: center;
+        }
+    }
+}

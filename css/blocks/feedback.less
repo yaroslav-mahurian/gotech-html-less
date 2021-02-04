@@ -1,0 +1,37 @@
+// main: ../style.less
+
+.feedback {
+    padding: 60px 0;
+
+    background: url(../images/feedback/feedback-bg.png);
+
+    position: relative;
+}
+
+.feedback__title {
+    margin-bottom: 35px;
+
+    font-size: 36px;
+    color: @black-str;
+
+    @media @mobile {
+        font-size: 32px;
+    }
+
+    @media @mobile-sm {
+        font-size: 24px;
+    }
+}
+
+.feedback__block {
+    margin: 0 auto;
+    max-width: 770px;
+    padding: 60px 50px 50px;
+    background-color: @white;
+
+    box-shadow: 0 20px 60px rgba(62, 62, 62, 16%);
+
+    @media @mobile-sm {
+        padding: 40px 25px 35px;
+    }
+}

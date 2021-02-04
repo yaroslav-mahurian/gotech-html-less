@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.arrow {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    
+    background-color: #fff;
+    color: #000;
+    vertical-align: top;
+    border-radius: 50%;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(153, 153, 153, 20%);
+
+    position: relative;
+
+    transition: box-shadow .1s linear;
+
+    @media @mobile-sm {
+        width: 40px;
+        height: 40px;
+    }
+
+    & i {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+
+        transform: translate(-50%, -50%);
+    }
+
+    &+.arrow {
+        margin-left: 30px;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 30px rgba(153, 153, 153, 50%);
+    }
+        /* Modificators */
+
+    &--thin {
+        background: none;
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+}

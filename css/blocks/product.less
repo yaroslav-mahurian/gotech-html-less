@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.product {
+    padding: 55px 35px;
+
+    box-shadow: 0 10px 30px rgba(153, 153, 153, 20%);
+    text-align: center;
+}
+
+.product__logo {
+    display: block;
+    margin: 0 auto;
+
+    @media @tablet {
+        width: 90px;
+    }
+}
+
+.product__text {
+    margin: 38px auto 35px auto;
+
+    text-align: center;
+
+    @media @tablet {
+        margin: 25px auto 30px auto;
+    }
+
+    @media @mobile-sm {
+        font-size: 12px;
+    }
+}
+
+.product__link {
+    color: #49BE55;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+
+    @media @mobile-sm {
+        font-size: 13px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.products__subtitle {
+    margin-top: 25px;
+}

@@ -1,0 +1,174 @@
+// main: ../style.less
+
+.footer {
+    margin-top: 90px;
+
+    
+    @media @tablet {
+        margin-top: 70px;   
+    }
+}
+
+.footer__logo-image {
+    display: block;
+    margin: 0 auto 75px;
+
+    @media @tablet {
+        margin-bottom: 55px;           
+    }
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @notebook {
+        margin: 0 50px;           
+    }
+
+    @media @tablet {
+        margin: 0 15px;           
+    }
+}
+
+.footer__col {
+    width: 25%;
+
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    @media @mobile-sm {
+        margin-bottom: 25px;
+    }
+
+    &--mb {
+        @media @mobile {
+            width: 50%;
+        }
+    }
+}
+
+.footer__title {
+    margin-bottom: 30px;
+
+    font-size: 15px;
+    color: #101C21;
+    font-weight: 700;
+
+    @media @mobile {
+        margin-bottom: 15px;
+    }
+}
+
+.footer__adress {
+    margin-bottom: 20px;
+
+    color: #777777;
+    font-size: 13px;
+
+    font-style: normal;
+}
+
+.footer__contact-item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media @tablet {
+        margin-bottom: 20px;          
+    }
+}
+
+.footer__contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 25px;
+
+    @media @tablet {
+        width: 20px;
+        margin: 0 6px;           
+    }
+}
+
+.footer__contact-text {
+    font-size: 13px;
+    color: #777777;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.footer__link {
+    margin-bottom: 16px;
+
+    @media @tablet {
+        margin-bottom: 14px;           
+    }
+
+    @media @mobile {
+        font-size: 15px;
+    }
+    
+    & a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #777777; 
+
+        &:hover {
+        text-decoration: underline;
+        }
+    }    
+}
+
+.footer__social-link {
+    margin-right: 20px;
+
+    text-decoration: none;
+
+    transition: transform .2s linear;
+
+    @media @notebook {
+        margin-right: 4px;           
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    & img {
+
+        @media @tablet {
+
+        width: 32px;
+        }
+    }
+}
+
+.footer__bottom {
+    position: relative;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+
+.copyright {
+    color: #999999;
+    font-size: 14px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    transform: translateX(-50%);
+
+    @media @tablet {
+        bottom: 20%;
+    }
+
+    @media @mobile-sm {
+        font-size: 11px;
+        bottom: 0;
+    }
+}
